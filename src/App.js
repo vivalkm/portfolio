@@ -1,16 +1,21 @@
-import Header from "./components/Header";
-import Main from "./pages/Main";
+import ScrollSpy from "./util/ScrollSpy";
+import { sections } from "./contents/Sections";
 function App() {
     return (
-        <div>
+        <>
             <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"></div>
             <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
                 <div className="lg:flex lg:justify-between lg:gap-4">
-                    <Header currentElementIndexInViewport />
-                    <Main />
+                    {/*ScrollSpy properties:
+          - sections: list of sections to display in scroll spy component
+          - isNavigateToFirstSectionOnLoad: boolean to navigate to the first section of the app
+          - menuWrapperClassName: className used to apply styles on the navigation menu
+          - mainContentClassName: className used to apply styles on the main content
+           */}
+                    <ScrollSpy sections={sections} isNavigateToFirstSectionOnLoad />
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
