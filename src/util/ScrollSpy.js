@@ -1,4 +1,4 @@
-import { update, Tween, Easing } from "https://cdn.skypack.dev/@tweenjs/tween.js@20.0.3";
+import { update, Tween, Easing } from "@tweenjs/tween.js";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Header from "../components/Header";
