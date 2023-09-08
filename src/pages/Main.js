@@ -1,5 +1,6 @@
 import React from "react";
 import MainSection from "../components/MainSection";
+import Footer from "./Footer";
 
 export default function Main({ sections }) {
     const renderedSections = sections.map((section) => {
@@ -12,6 +13,7 @@ export default function Main({ sections }) {
     return (
         <main id="content" className="pt-24 lg:w-2/3 lg:py-24">
             {renderedSections}
+            <Footer />
         </main>
     );
 }

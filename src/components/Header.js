@@ -20,7 +20,7 @@ export default function Header({ sections, animateScrolling }) {
         );
         time += 25;
         return (
-            <span className={classes} key={index}>
+            <span className={classes} key={"name_" + index}>
                 {c}
             </span>
         );

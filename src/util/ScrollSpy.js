@@ -6,7 +6,6 @@ import Main from "../pages/Main";
 
 export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoad = false }) {
     const navigate = useNavigate(),
-        { pathname } = useLocation(),
         //used to navigate to required section on app load if section path exist in url
         [isFirstLoad, setIsFirstLoad] = useState(false),
         debounceTimeoutRef = useRef(null),
@@ -15,7 +14,8 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
         scrollDuration = 700,
         // distance from top, used to align vertically with name in header
         topOffset = -100;
-
+    let { pathname, hash } = useLocation();
+    pathname += hash;
     // return the scroll top of the given element
     const elementOffsetTop = useCallback((el) => {
         const rect = el.getBoundingClientRect();
@@ -31,21 +31,20 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
 
     // animate scrolling on menu link click
     const animateScrolling = useCallback(
-        (name) => {
+        (pathname) => {
             const coords = { y: window.scrollY };
-            const target = document.getElementById(name.replace("/", ""));
-
+            const target = document.getElementById(pathname.replace("/#", ""));
             if (target) {
                 // Create a new tween that modifies 'coords'.
                 new Tween(coords)
                     // Move to top of the clicked element in 700ms.
-                    .to({ y: elementOffsetTop(target).top + topOffset }, scrollDuration)
+                    .to({ y: elementOffsetTop(target).top }, scrollDuration)
                     // Use an easing function to make the animation smooth.
                     .easing(Easing.Quadratic.Out)
                     .onUpdate(function () {
                         // Called after tween.js updates 'coords'.
                         // Move 'box' to the position described by 'coords' with a CSS translation.
-                        window.scrollTo(0, coords.y);
+                        window.scrollTo(0, coords.y + topOffset);
                     })
                     // Start tween immediately.
                     .start();
@@ -74,17 +73,17 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
             const target = document.getElementById(el.id);
             // if the current section offsetTop is less than the current
             // scroll position => set the active link to the current section
-            if (target.offsetTop <= scrollPosition) {
+            if (target.offsetTop + topOffset - 50 <= scrollPosition) {
                 // disable scroll animation while scrolling
                 shouldAnimateRef.current = false;
                 // push the new link
-                navigate(`/${el.id}`, { replace: true });
+                navigate(`#${el.id}`, { replace: true });
                 // re-enable scroll animation (so that we can have
                 // animation if the user click on a link)
                 shouldAnimateRef.current = true;
             }
         });
-    }, [sections, navigate]);
+    }, [sections, navigate, topOffset]);
 
     const debounceScroll = useCallback(() => {
         clearTimeout(debounceTimeoutRef.current);
@@ -100,7 +99,7 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
 
         const urlExist = new Promise((resolve) => {
             sections.forEach((el) => {
-                if (el.id === pathname.replace("/", "")) {
+                if (el.id === pathname.replace("/#", "")) {
                     resolve(true);
                 }
             });
@@ -112,12 +111,12 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
         urlExist.then((value) => {
             // the following condition to make sure that we have scroll
             // animation if we paste correct URL of a section in the browser
-            if (pathname !== "/" && value) {
+            if (pathname !== "/#" && value) {
                 window.addEventListener("load", onLoad);
             }
             //navigate to the first section of the app
             else if (pathname === "/" && isNavigateToFirstSectionOnLoad) {
-                navigate(`/${sections[0].id}`, { replace: true });
+                navigate(`/#${sections[0].id}`, { replace: true });
             }
         });
 

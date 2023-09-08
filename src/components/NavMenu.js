@@ -2,14 +2,10 @@ import React from "react";
 import NavItem from "./NavItem";
 
 export default function NavMenu({ sections, animateScrolling }) {
-    const renderedSections = sections.map((section) => {
+    const renderedSections = sections.map((section, index) => {
         return (
             <li key={section.id}>
-                <NavItem
-                    href={`#` + section.id}
-                    animateScrolling={animateScrolling}
-                    target_id={section.id}
-                >
+                <NavItem animateScrolling={animateScrolling} target_id={section.id} index={index}>
                     {section.label}
                 </NavItem>
             </li>
