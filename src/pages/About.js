@@ -11,7 +11,7 @@ export default function About() {
         const skillsColumn = skills.slice(start, start + countPerColumn).map((skill, index) => {
             return (
                 <li key={start + index}>
-                    <span className="hover:font-bold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-teal-400 hover:to-white">
+                    <span className="hover:font-bold hover:tracking-[-0.03em] hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-teal-400 hover:to-white">
                         <span className="text-xs mr-2">&#10003;</span>
                         {skill}
                     </span>
