@@ -21,7 +21,7 @@ export const projects = [
         title: "KidsFun",
         imgUrl: "https://github.com/vivalkm/KidsFun/assets/83200994/f63e71bb-2ca8-47b8-a613-a75efab95715",
         description:
-            "A web application using Express and Node.js to help parents search and share kid-friendly outdoor activities. This is my first full stack web application after learning Javascript, HTML, and CSS.",
+            "A web application using Express and Node.js to help parents search and share kid-friendly outdoor activities. This is my first full stack web application after learning JavaScript, HTML, and CSS.",
         demoLink: "https://kidsfun.cyclic.app/",
         gitHubLink: "https://github.com/vivalkm/KidsFun",
         skills: ["Express", "Node.js", "HTML", "CSS", "Bootstrap", "MongoDB", "Cloudinary"],
@@ -61,7 +61,7 @@ export const projects = [
         title: "WordGuess",
         imgUrl: "https://github.com/vivalkm/WordGuess/raw/master/walkthrough.gif",
         description:
-            "An android app that recreates a simple version of the popular word game Wordle. Users try to guess words in three rounds based on hints to unveil a beautiful confetti. I was interesting in learning Kotlin and Android Studio and it spun into this weekend project.",
+            "An android app that recreates a simple version of the popular word game Wordle. Users try to guess words in three rounds based on hints to unveil a beautiful confetto. I was interested in learning Kotlin and Android Studio and it spun into this weekend project.",
         gitHubLink: "https://github.com/vivalkm/WordGuess",
         skills: ["Kotlin", "Android Studio"],
     },
@@ -69,7 +69,7 @@ export const projects = [
         title: "Lion King Game",
         imgUrl: "https://github.com/vivalkm/LionKingGame/raw/master/walkthrough.gif",
         description:
-            "In summer 2019, while learning Java through the renowned course CS61B at UC Berkeley, I developed a 2D tile-based game that allows players to explore and interact with a pseudorandomly generated world. Since then, my development skills have immensely advanced. By the way, this is my son's most favorate game by far!",
+            "In summer 2019, while learning Java through the renowned course CS61B at UC Berkeley, I developed a 2D tile-based game that allows players to explore and interact with a pseudorandomly generated world. Since then, my development skills have advanced immensely. By the way, this is my son's most favorite game by far!",
         gitHubLink: "https://github.com/vivalkm/LionKingGame",
         skills: ["Java", "JUnit"],
     },
