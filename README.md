@@ -1,11 +1,7 @@
 # Portfolio
-A portfolio website built with React.js and Tailwind CSS
+A portfolio website built with React.js and Tailwind CSS. You can access Stork by visiting the following URL: <a href="https://lincoln-li.com">lincoln-li.com</a>
 
 <img width="1131" alt="image" src="https://github.com/vivalkm/portfolio/assets/83200994/117023eb-f059-4785-a518-8c027bcb2551">
-
-
-## Deployment
-You can access Stork by visiting the following URL: <a href="https://lincoln-li.com">lincoln-li.com</a>
 
 # Getting Started with Create React App
 
