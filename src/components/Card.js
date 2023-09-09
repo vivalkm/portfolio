@@ -1,6 +1,11 @@
 import React from "react";
 import { ExternalLink, Github } from "../contents/ContactMeData";
 export default function Card({ children }) {
+    const renderedSkills = children.skills?.map((skill, index) => {
+        return (
+            <div className="rounded-full mr-2 mb-2 bg-slate-300/40 px-2 py-0">{skill}</div>
+        )
+    })
     return (
         <div className="w-full group mb-10 sm:p-3 sm:flex rounded-lg transition duration-75 sm:hover:bg-slate-500/30">
             <div className="sm:w-1/4">
@@ -36,6 +41,7 @@ export default function Card({ children }) {
                 </p>
                 <p className="text-slate-400">{children.prevTitle}</p>
                 <p className="mt-1">{children.description}</p>
+                <div className="flex flex-wrap mt-2">{renderedSkills}</div>
             </div>
         </div>
     );

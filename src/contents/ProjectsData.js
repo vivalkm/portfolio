@@ -6,6 +6,7 @@ export const projects = [
             "A serverless single-page web application for yard sales, allowing users to easily list and edit items, browse available items, and contact sellers, streamlining the process of organizing and participating in yard sales",
         demoLink: "https://stork-xi.vercel.app/",
         gitHubLink: "https://github.com/vivalkm/stork",
+        skills: ["React.js", "Tailwind CSS", "Firebase", "AWS S3"],
     },
     {
         title: "lincoln-li.com",
@@ -13,6 +14,7 @@ export const projects = [
         description: "A portfolio site built for myself",
         demoLink: "https://lincoln-li.com",
         gitHubLink: "https://github.com/vivalkm/portfolio",
+        skills: ["React.js", "Tailwind CSS"],
     },
     {
         title: "KidsFun",
@@ -21,6 +23,7 @@ export const projects = [
             "A web application using Express and Node.js to help parents search and share kid-friendly outdoor activities",
         demoLink: "https://kidsfun.cyclic.app/",
         gitHubLink: "https://github.com/vivalkm/KidsFun",
+        skills: ["Express", "Node.js", "HTML", "CSS", "Bootstrap", "MongoDB", "Cloudinary"],
     },
     {
         title: "AWS Helper Bot",
@@ -28,5 +31,6 @@ export const projects = [
         description:
             "A chatbot to manage AWS resources via text and voice commands, simplifying complex AWS configurations across diverse resource consoles",
         demoLink: "https://www.youtube.com/watch?v=WqAO6BeNwrA",
+        skills: ["AWS Lambda", "Amazon Lex", "AWS S3", "AWS EC2", "AWS Backup", "AWS CloudFront"],
     },
 ];
