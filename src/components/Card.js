@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "../contents/ContactMeData";
 export default function Card({ children }) {
     const renderedSkills = children.skills?.map((skill, index) => {
         return (
-            <div className="rounded-full mr-2 mb-2 bg-slate-300/40 px-2 py-0" key={index}>
+            <div className="rounded-full mr-2 mb-2 text-sm font-bold text-slate-200 bg-slate-300/20 px-2 py-1" key={index}>
                 {skill}
             </div>
         );
