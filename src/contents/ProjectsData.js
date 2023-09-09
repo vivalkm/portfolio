@@ -31,6 +31,13 @@ export const projects = [
         description:
             "A chatbot to manage AWS resources via text and voice commands, simplifying complex AWS configurations across diverse resource consoles",
         demoLink: "https://www.youtube.com/watch?v=WqAO6BeNwrA",
-        skills: ["AWS Lambda", "Amazon Lex", "AWS S3", "AWS EC2", "AWS Backup", "AWS CloudFront"],
+        skills: [
+            "AWS Lambda",
+            "Amazon Lex",
+            "Amazon S3",
+            "Amazon EC2",
+            "AWS Backup",
+            "Amazon CloudFront",
+        ],
     },
 ];
