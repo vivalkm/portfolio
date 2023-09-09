@@ -31,7 +31,7 @@ export default function Header({ sections, animateScrolling }) {
             className(
                 "transition",
                 "duration-75",
-                "group-hover/name:text-teal-400",
+                "group-hover/name:text-teal-300",
                 "group-hover/name:-translate-y-1",
                 getDelay()[index]
             )
