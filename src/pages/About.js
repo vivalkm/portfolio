@@ -38,7 +38,7 @@ export default function About() {
             <p className="mb-5">
                 In addition to my academic endeavors, I've honed my skills through hands-on projects
                 that reflect my passion for innovation. From developing serverless web applications
-                to generating busienss insights from data analytics, I thrive on turning ideas into
+                to generating business insights via data analytics, I thrive on turning ideas into
                 reality. My technical toolkit includes a diverse range of programming languages,
                 databases, and web development technologies. Here are a few technologies I’ve been
                 working with recently:
