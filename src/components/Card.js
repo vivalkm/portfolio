@@ -2,7 +2,7 @@ import React from "react";
 import { ExternalLink, Github } from "../contents/ContactMeData";
 export default function Card({ children }) {
     const renderedSkills = children.skills?.map((skill, index) => {
-        return <div className="rounded-full mr-2 mb-2 bg-slate-300/40 px-2 py-0">{skill}</div>;
+        return <div className="rounded-full mr-2 mb-2 bg-slate-300/40 px-2 py-0" key={index}>{skill}</div>;
     });
     return (
         <div className="w-full group mb-10 sm:p-3 sm:flex rounded-lg transition duration-75 sm:hover:bg-slate-500/30 sm:hover:translate-y-0.5 sm:hover:shadow-lg sm:hover:shadow-teal-600/30">
