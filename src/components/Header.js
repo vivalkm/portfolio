@@ -15,7 +15,7 @@ export default function Header({ sections, animateScrolling }) {
                 "transition",
                 "duration-75",
                 "group-hover/name:-translate-y-1",
-                `delay-[${time}ms]`
+                `group-hover/name:delay-[${time}ms]`
             )
         );
         time += 25;
@@ -26,7 +26,7 @@ export default function Header({ sections, animateScrolling }) {
         );
     });
     return (
-        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/3 lg:flex-col lg:justify-between lg:py-24">
+        <header className="md:sticky md:top-0 md:flex md:max-h-screen md:w-1/3 md:flex-col md:justify-between md:py-24">
             <div>
                 <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
                     <a href="/">
