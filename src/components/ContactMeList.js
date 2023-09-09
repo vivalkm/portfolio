@@ -1,6 +1,6 @@
 import React from "react";
 import ContactMeItem from "./ContactMeItem";
-import { Github, LinkedIn, Email } from "../util/ContactMeData";
+import { Github, LinkedIn, Email } from "../contents/ContactMeData";
 
 export default function ContactMeList() {
     return (

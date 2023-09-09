@@ -3,7 +3,7 @@ import NavMenu from "./NavMenu";
 import ContactMeList from "./ContactMeList";
 import { twMerge } from "tailwind-merge";
 import className from "classnames";
-import { profile } from "../util/Profile";
+import { profile } from "../contents/Profile";
 
 export default function Header({ sections, animateScrolling }) {
     // animation on name
@@ -50,7 +50,7 @@ export default function Header({ sections, animateScrolling }) {
                         <span className="group/name inline-flex">{renderedName}</span>
                     </a>
                 </h1>
-                <h2 className="mt-3 text-md font-medium tracking-tight text-slate-200 md:test-lg lg:text-xl">
+                <h2 className="mt-3 text-md font-medium tracking-tight text-slate-300 md:test-lg lg:text-xl">
                     {profile.position}
                 </h2>
                 <p className="mt-4 max-w-xs leading-normal">{profile.description}</p>
