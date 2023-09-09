@@ -6,19 +6,36 @@ import className from "classnames";
 import { profile } from "../util/Profile";
 
 export default function Header({ sections, animateScrolling }) {
-    let time = 50;
     // animation on name
+    // tailwind only supports full class name, not dynamic concatenation of its parts
+    const getDelay = () => {
+        return {
+            0: "delay-[50ms]",
+            1: "delay-[75ms]",
+            2: "delay-[100ms]",
+            3: "delay-[125ms]",
+            4: "delay-[150ms]",
+            5: "delay-[175ms]",
+            6: "delay-[200ms]",
+            7: "delay-[225ms]",
+            8: "delay-[250ms]",
+            9: "delay-[275ms]",
+            10: "delay-[300ms]",
+            11: "delay-[325ms]",
+            12: "delay-[350ms]",
+        };
+    };
+
     const renderedName = [...profile.name].map((c, index) => {
         const classes = twMerge(
             className(
-                "group-hover/name:text-teal-400",
                 "transition",
                 "duration-75",
+                "group-hover/name:text-teal-400",
                 "group-hover/name:-translate-y-1",
-                `group-hover/name:delay-[${time}ms]`
+                getDelay()[index]
             )
         );
-        time += 25;
         return (
             <span className={classes} key={"name_" + index}>
                 {c}
