@@ -11,7 +11,7 @@ export default function Main({ sections }) {
         );
     });
     return (
-        <main id="content" className="md:w-2/3">
+        <main id="content" className="sm:w-2/3">
             {renderedSections}
             <Footer />
         </main>

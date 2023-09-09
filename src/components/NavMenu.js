@@ -12,8 +12,8 @@ export default function NavMenu({ sections, animateScrolling }) {
         );
     });
     return (
-        <nav className="nav hidden md:block" aria-label="In-page jump links">
-            <ul className="md:mt-8 lg:mt-16 w-max">{renderedSections}</ul>
+        <nav className="nav hidden sm:block" aria-label="In-page jump links">
+            <ul className="sm:mt-4 md:mt-8 lg:mt-16 w-max">{renderedSections}</ul>
         </nav>
     );
 }
