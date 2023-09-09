@@ -5,7 +5,7 @@ export const jobs = [
         prevTitle: "Senior Financial Analyst",
         description:
             "At Amazon, I played a pivotal role in transforming financial operations by automating monthly planning, reporting and analysis through sophisticated SQL queries and data models. This not only saved thousands of work hours annually but also improved forecast accuracy. Additionally, I utilized Python and machine learning to quantify the ROI of various initiatives, developed web applications to streamline data collection and report auditing.",
-        skills: ["Python", "SQL", "Pandas", "Scikit-learn"],
+        skills: ["Python", "SQL", "Pandas", "Scikit-learn", "JavaScript", "ETL"],
     },
     {
         period: "2015 - 2016",
