@@ -1,10 +1,10 @@
 import React from "react";
 import { projects } from "../contents/ProjectsData";
-import Card from "../components/Card";
+import ImageCard from "../components/ImageCard";
 
 export default function Projects() {
     const renderedProjects = projects.map((project, index) => {
-        return <Card key={index}>{project}</Card>;
+        return <ImageCard key={index}>{project}</ImageCard>;
     });
     return <div>{renderedProjects}</div>;
 }

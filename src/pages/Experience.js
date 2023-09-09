@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../components/Card";
 import { jobs } from "../contents/ExperienceData";
+import TimeCard from "../components/TimeCard";
 
 export default function Experience() {
     const renderedJobs = jobs.map((job, index) => {
-        return <Card key={index}>{job}</Card>;
+        return <TimeCard key={index}>{job}</TimeCard>;
     });
     return <div>{renderedJobs}</div>;
 }

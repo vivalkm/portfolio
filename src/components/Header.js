@@ -43,12 +43,10 @@ export default function Header({ sections, animateScrolling }) {
         );
     });
     return (
-        <header className="sm:sticky sm:top-0 sm:flex sm:max-h-screen sm:w-1/3 sm:flex-col sm:justify-between sm:py-6 md:py-12 lg:py-24">
+        <header className="sm:sticky sm:top-0 sm:flex sm:flex-col sm:max-h-screen sm:w-1/3  sm:justify-between sm:py-6 md:py-12 lg:py-24">
             <div>
                 <h1 className="text-3xl font-bold tracking-tight text-slate-200 lg:text-5xl">
-                    <a href="/">
-                        <span className="group/name inline-flex">{renderedName}</span>
-                    </a>
+                    <span className="group/name inline-flex">{renderedName}</span>
                 </h1>
                 <h2 className="mt-3 text-md font-medium tracking-tight text-slate-300 md:test-lg lg:text-xl">
                     {profile.position}
