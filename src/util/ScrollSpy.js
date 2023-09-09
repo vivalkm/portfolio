@@ -72,7 +72,9 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
             const target = document.getElementById(el.id);
             // if the current section offsetTop is less than the current
             // scroll position => set the active link to the current section
-            if (target.offsetTop <= scrollPosition) {
+            console.log(el.id + ' ' + target.offsetTop);
+            console.log(scrollPosition);
+            if (target.offsetTop <= Math.round(scrollPosition)) {
                 // disable scroll animation while scrolling
                 shouldAnimateRef.current = false;
                 // push the new link

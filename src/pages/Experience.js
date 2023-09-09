@@ -5,10 +5,6 @@ import { jobs } from "../contents/ExperienceData";
 export default function Experience() {
     const renderedJobs = jobs.map((job, index) => {
         return <Card key={index}>{job}</Card>;
-    })
-    return (
-        <div>
-            {renderedJobs}
-        </div>
-    );
+    });
+    return <div>{renderedJobs}</div>;
 }
