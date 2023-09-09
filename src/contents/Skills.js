@@ -8,6 +8,6 @@ export const skills = [
     "Java",
     "AWS",
     "HTML",
-    "CSS (Tailwind, Bootstrap)",
+    "CSS",
     "Express",
 ];
