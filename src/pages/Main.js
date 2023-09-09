@@ -11,7 +11,7 @@ export default function Main({ sections }) {
         );
     });
     return (
-        <main id="content" className="pt-24 md:w-2/3 md:py-24">
+        <main id="content" className="md:w-2/3">
             {renderedSections}
             <Footer />
         </main>

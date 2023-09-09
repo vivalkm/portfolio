@@ -11,9 +11,8 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
         debounceTimeoutRef = useRef(null),
         // animation will be applied only if the user click on a menu link not on scrolling
         shouldAnimateRef = useRef(true),
-        scrollDuration = 700,
-        // distance from top, used to align vertically with name in header
-        topOffset = -100;
+        scrollDuration = 700;
+
     let { pathname, hash } = useLocation();
     pathname += hash;
     // return the scroll top of the given element
@@ -44,7 +43,7 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
                     .onUpdate(function () {
                         // Called after tween.js updates 'coords'.
                         // Move 'box' to the position described by 'coords' with a CSS translation.
-                        window.scrollTo(0, coords.y + topOffset);
+                        window.scrollTo(0, coords.y);
                     })
                     // Start tween immediately.
                     .start();
@@ -52,7 +51,7 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
                 requestAnimationFrame(animate);
             }
         },
-        [animate, elementOffsetTop, topOffset]
+        [animate, elementOffsetTop]
     );
 
     // scroll to the given section if we paste
@@ -73,7 +72,7 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
             const target = document.getElementById(el.id);
             // if the current section offsetTop is less than the current
             // scroll position => set the active link to the current section
-            if (target.offsetTop + topOffset - 50 <= scrollPosition) {
+            if (target.offsetTop <= scrollPosition) {
                 // disable scroll animation while scrolling
                 shouldAnimateRef.current = false;
                 // push the new link
@@ -83,7 +82,7 @@ export default function ScrollSpy({ sections = [], isNavigateToFirstSectionOnLoa
                 shouldAnimateRef.current = true;
             }
         });
-    }, [sections, navigate, topOffset]);
+    }, [sections, navigate]);
 
     const debounceScroll = useCallback(() => {
         clearTimeout(debounceTimeoutRef.current);
