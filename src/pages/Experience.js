@@ -13,7 +13,7 @@ export default function Experience() {
             {renderedJobs}
             <div className="-mt-4 pb-10">
                 <a
-                    href="/resume.pdf"
+                    href="/Resume_Lincoln_Li.pdf"
                     className="float-right text-teal-400 hover:text-teal-200 hover:font-bold border border-teal-200 p-2 rounded hover:shadow-md hover:shadow-teal-100"
                 >
                     View Full Resume in PDF
