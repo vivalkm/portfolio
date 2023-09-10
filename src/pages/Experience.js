@@ -15,6 +15,7 @@ export default function Experience() {
                 <a
                     href="/Resume_Lincoln_Li.pdf"
                     className="float-right text-teal-400 hover:text-teal-200 hover:font-bold border border-teal-200 p-2 rounded hover:shadow-md hover:shadow-teal-100"
+                    target="_blank"
                 >
                     View Full Resume in PDF
                 </a>
