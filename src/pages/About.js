@@ -10,7 +10,7 @@ export default function About() {
     for (let i = 0; i < columns; i++) {
         const skillsColumn = skills.slice(start, start + countPerColumn).map((skill, index) => {
             return (
-                <li key={start + index}>
+                <li key={index}>
                     <span className="hover:font-bold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-teal-400 hover:to-white">
                         <span className="text-xs mr-2">&#10003;</span>
                         {skill}
@@ -18,12 +18,12 @@ export default function About() {
                 </li>
             );
         });
-        renderedSkills.push(<ul key={start}>{skillsColumn}</ul>);
+        renderedSkills.push(<ul>{skillsColumn}</ul>);
         start += countPerColumn;
     }
 
     return (
-        <div className="sm:px-3 mb-10">
+        <div className="about sm:px-3 mb-10">
             <p className="mb-5">
                 Hey there, I'm Lincoln, and I enjoy building stuff and creating projects to solve
                 problems and out of curiosity.
