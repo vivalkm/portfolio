@@ -6,5 +6,5 @@ export default function Projects() {
     const renderedProjects = projects.map((project, index) => {
         return <ImageCard key={index}>{project}</ImageCard>;
     });
-    return <div>{renderedProjects}</div>;
+    return <div className="projects">{renderedProjects}</div>;
 }
