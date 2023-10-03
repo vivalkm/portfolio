@@ -5,7 +5,6 @@ export const projects = [
         description:
             "A serverless single-page web application for yard sales, allowing users to easily list and edit items, browse available items, and contact sellers, streamlining the process of organizing and participating in yard sales.",
         demoLink: "https://stork-xi.vercel.app/",
-        gitHubLink: "https://github.com/vivalkm/stork",
         skills: ["React.js", "Tailwind CSS", "Firebase", "AWS S3"],
     },
     {
@@ -14,7 +13,6 @@ export const projects = [
         description:
             "A personal portfolio site built for myself, implementing various frontend tricks and techniques based on what I learned from CodePen Spark.",
         demoLink: "https://lincoln-li.com",
-        gitHubLink: "https://github.com/vivalkm/portfolio",
         skills: ["React.js", "Tailwind CSS", "TweenJS"],
     },
     {
@@ -23,7 +21,6 @@ export const projects = [
         description:
             "A web application using Express and Node.js to help parents search and share kid-friendly outdoor activities. This is my first full stack web application after learning JavaScript, HTML, and CSS.",
         demoLink: "https://kidsfun.cyclic.app/",
-        gitHubLink: "https://github.com/vivalkm/KidsFun",
         skills: ["Express", "Node.js", "HTML", "CSS", "Bootstrap", "MongoDB", "Cloudinary"],
     },
     {
