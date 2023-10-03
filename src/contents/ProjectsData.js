@@ -30,7 +30,7 @@ export const projects = [
             "A chatbot to manage AWS resources via text and voice communications, simplifying complex AWS configurations process, and enhancing user engagement and interaction via Natural Language Understanding feature enabled by Amazon Lex.",
         demoLink: "https://www.youtube.com/watch?v=WqAO6BeNwrA",
         skills: [
-            "Python"
+            "Python",
             "AWS Lambda",
             "Amazon Lex",
             "Amazon S3",
