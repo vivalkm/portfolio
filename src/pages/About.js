@@ -45,7 +45,7 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 mb-5">{renderedSkills}</div>
             <p className="mb-5">
-                I'm currently working in Corporate Finance at Amazon, focusing on buidling solutions
+                I'm currently working in Corporate Finance at Amazon, focusing on building solutions
                 in automating financial reporting and analysis processes, and providing data-driven
                 recommendations to grow business and increase ROI.
             </p>
