@@ -33,7 +33,7 @@ export default function About() {
                 solidified by strong academic foundation. I'm currently pursuing Master of Computer
                 and Information Technology at the University of Pennsylvania, where I've maintained
                 a perfect 4.0 GPA. My coursework ranges from software development to artificial
-                intelligence, and I've soaked up knowledge like a sponge.
+                intelligence.
             </p>
             <p className="mb-5">
                 In addition to my academic endeavors, I've honed my skills through hands-on projects
