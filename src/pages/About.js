@@ -18,7 +18,7 @@ export default function About() {
                 </li>
             );
         });
-        renderedSkills.push(<ul>{skillsColumn}</ul>);
+        renderedSkills.push(<ul key={i}>{skillsColumn}</ul>);
         start += countPerColumn;
     }
 
