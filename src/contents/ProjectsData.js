@@ -25,7 +25,7 @@ export const projects = [
     },
     {
         title: "AWS Helper Bot",
-        imgUrl: "https://drive.usercontent.google.com/download?id=1s_lRFO8JlkVPdzp2dPPAB3TDPNO5BRzM",
+        imgUrl: "https://res.cloudinary.com/vivalkm/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1709841699/Portfolio_website/download_qsrutr.jpg",
         description:
             "A chatbot to manage AWS resources via text and voice communications, simplifying complex AWS configurations process, and enhancing user engagement and interaction via Natural Language Understanding feature enabled by Amazon Lex.",
         demoLink: "https://www.youtube.com/watch?v=WqAO6BeNwrA",
