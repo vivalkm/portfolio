@@ -1,5 +1,5 @@
 export const profile = {
     name: "Lincoln\xA0Li",
-    position: "Software Engineer",
+    position: "Finance, Data Science, Software Engineering",
     description: "",
 };

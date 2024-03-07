@@ -29,11 +29,12 @@ export default function About() {
                 problems and out of curiosity.
             </p>
             <p className="mb-5">
-                My journey into the world of software engineering began with intense curiosity and
-                solidified by strong academic foundation. I'm currently pursuing Master of Computer
-                and Information Technology at the University of Pennsylvania, where I've maintained
-                a perfect 4.0 GPA. My coursework ranges from software development to artificial
-                intelligence.
+                {/* My journey into the world of software engineering began with intense curiosity and
+                solidified by strong academic foundation.  */}
+                I'm currently pursuing Master of Computer and Information Technology at the
+                University of Pennsylvania, where I've maintained a perfect 4.0 GPA. My coursework
+                ranges from software development to artificial intelligence and natural language
+                processing.
             </p>
             <p className="mb-5">
                 In addition to my academic endeavors, I've honed my skills through hands-on projects
@@ -45,9 +46,9 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 mb-5">{renderedSkills}</div>
             <p className="mb-5">
-                I'm currently working in Corporate Finance at Amazon, focusing on building solutions
-                in automating financial reporting and analysis processes, and providing data-driven
-                recommendations to grow business and increase ROI.
+                Working in Corporate Finance at Amazon, I am currently focusing on building
+                solutions in automating financial reporting and analysis processes, and providing
+                data-driven recommendations to grow business and increase ROI.
             </p>
         </div>
     );

@@ -5,9 +5,12 @@ export const skills = [
     "React",
     "Node.js",
     "SQL",
+    "MongoDB",
     "Java",
     "AWS",
     "HTML",
     "CSS",
     "Express",
+    "Spring Boot",
+
 ];
