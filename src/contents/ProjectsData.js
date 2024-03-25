@@ -1,11 +1,19 @@
 export const projects = [
     {
+        title: "Algorithm Visualizer",
+        imgUrl: "https://github.com/vivalkm/algo_visualizer/raw/master/walkthrough.gif",
+        description:
+            "A front end app built for undergraduate students to visualize BFS and DFS algorithms with customizable settings.",
+        gitHubLink: "https://github.com/vivalkm/algo_visualizer/",
+        skills: ["React", "Material UI", "Vite"],
+    },
+    {
         title: "Stork",
         imgUrl: "https://user-images.githubusercontent.com/83200994/266770847-3348e6ab-73eb-433e-91a8-d8ef2c8bdf35.png",
         description:
             "A serverless single-page web application for yard sales, allowing users to easily list and edit items, browse available items, and contact sellers, streamlining the process of organizing and participating in yard sales.",
         demoLink: "https://stork-xi.vercel.app/",
-        skills: ["React.js", "Tailwind CSS", "Firebase", "AWS S3"],
+        skills: ["React", "Tailwind CSS", "Firebase", "AWS S3"],
     },
     {
         title: "lincoln-li.com",
@@ -13,7 +21,7 @@ export const projects = [
         description:
             "A personal portfolio site built for myself, implementing various frontend tricks and techniques based on what I learned from CodePen Spark.",
         demoLink: "https://lincoln-li.com",
-        skills: ["React.js", "Tailwind CSS", "TweenJS"],
+        skills: ["React", "Tailwind CSS", "TweenJS"],
     },
     {
         title: "KidsFun",
