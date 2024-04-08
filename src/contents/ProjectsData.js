@@ -75,7 +75,7 @@ export const projects = [
         title: "Lion King Game",
         imgUrl: "https://github.com/vivalkm/LionKingGame/raw/master/walkthrough.gif",
         description:
-            "In summer 2019, while learning Java through the renowned course CS61B at UC Berkeley, I developed a 2D tile-based game that allows players to explore and interact with a pseudorandomly generated world. Since then, my development skills have advanced immensely. By the way, this is my son's most favorite game by far!",
+            "My son loves The Lion King, so I built a 2D tile-based game that allows him as the main character to explore and interact with a pseudorandomly generated world to save Mufasa and beat Scar. This is my son's most favorite game by far!",
         gitHubLink: "https://github.com/vivalkm/LionKingGame",
         skills: ["Java", "JUnit"],
     },

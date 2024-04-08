@@ -4,7 +4,7 @@ export const jobs = [
         title: "Finance Manager \u2022 Amazon.com",
         prevTitle: "Senior Financial Analyst",
         description:
-            "At Amazon, I played a pivotal role in transforming financial operations by automating monthly planning, reporting and analysis through sophisticated SQL queries and data models. This not only saved thousands of work hours annually but also improved forecast accuracy. Additionally, I utilized Python and machine learning to quantify the ROI of various initiatives, developed web applications to streamline data collection and report auditing.",
+            "At Amazon, I played a pivotal role in transforming financial operations by automating monthly planning, reporting and analysis. This not only saved thousands of work hours annually but also improved forecast accuracy. Additionally, I utilized Python and machine learning to quantify the ROI of various initiatives, developed web applications to streamline data collection and report auditing. More recently, I developed a knowledge base chatbot using Claude LLM and Retrieval Augmented Generation (RAG), empowering our business partners and new team members to swiftly access and comprehend essential organizational background and contextual information.",
         skills: ["Python", "SQL", "Pandas", "Scikit-learn", "JavaScript", "ETL"],
     },
     {
