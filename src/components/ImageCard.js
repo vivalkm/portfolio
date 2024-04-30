@@ -8,6 +8,7 @@ export default function ImageCard({ children }) {
                 <div className="pr-5 py-2">
                     <img
                         className="w-60 rounded border-2 border-slate-600 sm:group-hover:shadow-md sm:group-hover:shadow-teal-600/40"
+                        style={{"background-color":"white"}}
                         src={children.imgUrl}
                         alt="card_image"
                     />
