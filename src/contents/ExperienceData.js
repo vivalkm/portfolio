@@ -1,6 +1,13 @@
 export const jobs = [
     {
-        period: "2018 - Now",
+        period: "2024 - Now",
+        title: "Senior Manager, Business Intelligence, \u2022 Remitly",
+        description:
+            "Leveraging my expertise in analytics, data engineering, and deep domain knowledge in finance and business, I lead the design and implementation of financial automation solutions across key functions at Remitly, including Business Management, Global Market Management, Treasury, Risk, and Marketing. Currently, I am spearheading the development of an end-to-end, machine learning-driven automated forecasting solution that is driving significant efficiency and innovation.",
+        skills: ["Python", "SQL", "AWS", "Data Engineering"],
+    },
+    {
+        period: "2018 - 2024",
         title: "Finance Manager \u2022 Amazon.com",
         prevTitle: "Senior Financial Analyst",
         description:
