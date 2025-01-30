@@ -29,12 +29,16 @@ export default function About() {
                 problems and out of curiosity.
             </p>
             <p className="mb-5">
+                Currently working in Business Intelligence and Analytics, I specialize in building
+                automated solutions for forecasting, reporting, and analysis. I provide data-driven
+                recommendations aimed at driving business growth and increasing ROI.
+            </p>
+            <p className="mb-5">
                 {/* My journey into the world of software engineering began with intense curiosity and
                 solidified by strong academic foundation.  */}
-                I'm currently pursuing Master of Computer and Information Technology at the
-                University of Pennsylvania, where I've maintained a perfect 4.0 GPA. My coursework
-                ranges from software development to artificial intelligence and natural language
-                processing.
+                I'm also pursuing Master of Computer and Information Technology at the University of
+                Pennsylvania, where I've maintained a perfect 4.0 GPA. My coursework ranges from
+                software development to artificial intelligence and natural language processing.
             </p>
             <p className="mb-5">
                 In addition to my academic endeavors, I've honed my skills through hands-on projects
@@ -45,11 +49,6 @@ export default function About() {
                 working with recently:
             </p>
             <div className="grid grid-cols-2 mb-5">{renderedSkills}</div>
-            <p className="mb-5">
-                Currently working in Business Intelligence and Analytics, I specialize in building
-                automated solutions for forecasting, reporting, and analysis. I provide data-driven
-                recommendations aimed at driving business growth and increasing ROI.
-            </p>
         </div>
     );
 }
