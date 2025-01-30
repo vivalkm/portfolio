@@ -46,9 +46,9 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 mb-5">{renderedSkills}</div>
             <p className="mb-5">
-                Working in Corporate Finance at Amazon, I am currently focusing on building
-                solutions in automating financial reporting and analysis processes, and providing
-                data-driven recommendations to grow business and increase ROI.
+                Currently working in Business Intelligence and Analytics, I specialize in building
+                automated solutions for forecasting, reporting, and analysis. I provide data-driven
+                recommendations aimed at driving business growth and increasing ROI.
             </p>
         </div>
     );
