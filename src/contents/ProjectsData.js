@@ -3,9 +3,9 @@ export const projects = [
         title: "Amazon Delivery Knowledge Base",
         imgUrl: "https://github.com/vivalkm/dsp_knowledge_base_frontend/raw/master/Design_Diagram.png",
         description:
-            "This project is an AI-powered knowledge base system that allows users to ask questions via a web application and receive answers based on preloaded private documents. \
-            The system leverages various AWS services and large language models (LLMs) to provide accurate and relevant responses. It follows a Retrieval Augmented Generation (RAG) \
-            architecture, where relevant document chunks are first retrieved from a vector database, and then an LLM is used to generate a summarized response based on the retrieved information.",
+            `This project is an AI-powered knowledge base system that allows users to ask questions via a web application and receive answers based on preloaded private documents. 
+            The system leverages various AWS services and large language models (LLMs) to provide accurate and relevant responses. It follows a Retrieval Augmented Generation (RAG) 
+            architecture, where relevant document chunks are first retrieved from a vector database, and then an LLM is used to generate a summarized response based on the retrieved information.`,
         gitHubLink: "https://github.com/vivalkm/dsp_knowledge_base_frontend",
         skills: [
             "React",
