@@ -47,7 +47,7 @@ export const projects = [
         imgUrl: "https://github.com/vivalkm/KidsFun/assets/83200994/f63e71bb-2ca8-47b8-a613-a75efab95715",
         description:
             "A web application using Express and Node.js to help parents search and share kid-friendly outdoor activities. This is my first full stack web application after learning JavaScript, HTML, and CSS.",
-        demoLink: "https://kidsfun.cyclic.app/",
+        demoLink: "https://kidsfun.onrender.com/",
         skills: ["Express", "Node.js", "HTML", "CSS", "Bootstrap", "MongoDB", "Cloudinary"],
     },
     {
