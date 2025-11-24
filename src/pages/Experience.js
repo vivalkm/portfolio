@@ -4,7 +4,7 @@ import TimeCard from "../components/TimeCard";
 
 export default function Experience() {
     const renderedJobs = jobs.map((job, index) => {
-        return <TimeCard key={index}>{job}</TimeCard>;
+        return <TimeCard key={index} {...job} />;
     });
     return (
         <div className="experience mb-10">
