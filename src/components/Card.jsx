@@ -1,4 +1,3 @@
-import React from "react";
 import { ExternalLink, Github } from "../contents/ContactMeData";
 export default function Card({ title, prevTitle, description, skills, demoLink, gitHubLink }) {
     const renderedSkills = skills?.map((skill, index) => {

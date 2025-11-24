@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ContactMeItem({ data }) {
     return (
         <li className="mr-5 text-xs">

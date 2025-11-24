@@ -1,4 +1,3 @@
-import React from "react";
 import NavMenu from "./NavMenu";
 import ContactMeList from "./ContactMeList";
 import { twMerge } from "tailwind-merge";

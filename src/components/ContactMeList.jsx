@@ -1,4 +1,3 @@
-import React from "react";
 import ContactMeItem from "./ContactMeItem";
 import { Github, LinkedIn, Email } from "../contents/ContactMeData";
 

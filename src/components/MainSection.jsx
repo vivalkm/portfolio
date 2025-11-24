@@ -1,4 +1,3 @@
-import React from "react";
 import MainSectionTitle from "./MainSectionTitle";
 
 export default function MainSection({ id, title, children }) {

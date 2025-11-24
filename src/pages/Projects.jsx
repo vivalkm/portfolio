@@ -1,4 +1,3 @@
-import React from "react";
 import { projects } from "../contents/ProjectsData";
 import ImageCard from "../components/ImageCard";
 
