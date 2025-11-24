@@ -16,26 +16,23 @@ export default function About() {
     return (
         <div className="about sm:px-3 mb-10">
             <p className="mb-5">
-                Hey there, I'm Lincoln, and I enjoy building stuff and creating projects to solve
-                problems and out of curiosity.
+                Hi, I'm Lincoln. I have a passion for building software and creating projects that
+                solve real-world problems.
             </p>
             <p className="mb-5">
-                Currently working in Business Intelligence and Analytics, I specialize in building
-                automated solutions for forecasting, reporting, and analysis. I provide data-driven
-                recommendations aimed at driving business growth and increasing ROI.
+                In my current role in Business Intelligence and Analytics at Remitly, I wear multiple hats from data engineer to data scientist to financial analyst.
+                During my first year joining Remitly, I designed and developed an automated forecasting application for the core remittance business. I also managed
+                 the data pipeline for financial transaction data, built a ETL manager application to replace manual reporting workflows, conducted
+                in-depth data analytics, and built dashboards to provide insights into the remittance business.
             </p>
             <p className="mb-5">
-                I'm also pursuing Master of Computer and Information Technology at the University of
-                Pennsylvania, where I've maintained a perfect 4.0 GPA. My coursework ranges from
+                I earned a Master of Computer and Information Technology from the University of
+                Pennsylvania, graduating with a perfect 4.0 GPA. My coursework ranged from
                 software development to artificial intelligence and natural language processing.
             </p>
             <p className="mb-5">
-                In addition to my academic endeavors, I've honed my skills through hands-on projects
-                that reflect my passion for innovation. From developing serverless web applications
-                to generating business insights via data analytics, I thrive on turning ideas into
-                reality. My technical toolkit includes a diverse range of programming languages,
-                databases, and web development technologies. Here are a few technologies I’ve been
-                working with recently:
+                My technical toolkit spans a diverse range of programming languages, databases,
+                and web development technologies. Here are a few I've been working with recently:
             </p>
             <ul className="columns-2 mb-5">{renderedSkills}</ul>
         </div>
